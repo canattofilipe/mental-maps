@@ -4,7 +4,7 @@
 <edge STYLE="sharp_linear"/>
 <font BOLD="true" NAME="SansSerif" SIZE="20"/>
 <hook NAME="accessories/plugins/AutomaticLayout.properties"/>
-<node COLOR="#0033ff" CREATED="1686238200499" FOLDED="true" ID="ID_1243836284" MODIFIED="1699531954636" POSITION="right" TEXT="Understanding design patterns">
+<node COLOR="#0033ff" CREATED="1686238200499" FOLDED="true" ID="ID_1243836284" MODIFIED="1699554081600" POSITION="right" TEXT="Understanding design patterns">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 <icon BUILTIN="full-1"/>
@@ -84,7 +84,7 @@
 </node>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1687634806970" FOLDED="true" ID="ID_704232477" MODIFIED="1699531953569" POSITION="left" TEXT="Generic notes">
+<node COLOR="#0033ff" CREATED="1687634806970" FOLDED="true" ID="ID_704232477" MODIFIED="1699883629262" POSITION="left" TEXT="Generic notes">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 <node COLOR="#00b439" CREATED="1687634834176" ID="ID_1036146659" MODIFIED="1687634918924" TEXT="Quando a programa&#xe7;&#xe3;o orientada a objetos foi criada, um dos objetivos era simplificar a abstra&#xe7;&#xe3;o dos conceitos do mundo real para o software. Dessa forma, um elemento existente no dom&#xed;nio&#xa;da aplica&#xe7;&#xe3;o poderia ser representado utilizando um objeto no&#xa;software. Da mesma forma que as coisas interagem no mundo real&#xa;para a realiza&#xe7;&#xe3;o de um objetivo, dentro de um software n&#xe3;o&#xa;poderia ser diferente. Do mesmo jeito que diversas pe&#xe7;as s&#xe3;o&#xa;combinadas em v&#xe1;rios n&#xed;veis para compor um componente f&#xed;sico,&#xa;os componentes de software tamb&#xe9;m podem ser resultado da&#xa;combina&#xe7;&#xe3;o de outros componentes mais granulares.">
@@ -184,7 +184,7 @@
 <font NAME="SansSerif" SIZE="16"/>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1695814345510" FOLDED="true" ID="ID_1204620840" MODIFIED="1699531957472" POSITION="right" TEXT="GitHub">
+<node COLOR="#0033ff" CREATED="1695814345510" ID="ID_1204620840" MODIFIED="1699615149741" POSITION="right" TEXT="GitHub">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 <node COLOR="#00b439" CREATED="1695814352610" ID="ID_1927511928" MODIFIED="1695814353160" TEXT="https://github.com/iluwatar/java-design-patterns">
@@ -192,7 +192,7 @@
 <font NAME="SansSerif" SIZE="16"/>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1697913436371" FOLDED="true" ID="ID_949295350" MODIFIED="1699531962386" POSITION="left" TEXT="Estrat&#xe9;gias para cria&#xe7;&#xe3;o de objetos">
+<node COLOR="#0033ff" CREATED="1697913436371" FOLDED="true" ID="ID_949295350" MODIFIED="1700071518636" POSITION="left" TEXT="Estrat&#xe9;gias para cria&#xe7;&#xe3;o de objetos">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 <icon BUILTIN="full-6"/>
@@ -375,7 +375,7 @@
 </node>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1699529836508" ID="ID_1900676868" MODIFIED="1699532267739" POSITION="left" TEXT="Gerenciando Muitos Objetos">
+<node COLOR="#0033ff" CREATED="1699529836508" ID="ID_1900676868" MODIFIED="1700071522232" POSITION="left" TEXT="Gerenciando Muitos Objetos">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 <icon BUILTIN="full-9"/>
@@ -383,7 +383,7 @@
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 </node>
-<node COLOR="#00b439" CREATED="1699530166344" ID="ID_833313072" MODIFIED="1699530169483" TEXT="Facade">
+<node COLOR="#00b439" CREATED="1699530166344" FOLDED="true" ID="ID_833313072" MODIFIED="1700049790577" TEXT="Facade">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font BOLD="true" NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1699530180657" ID="ID_1947981994" MODIFIED="1699530181320" TEXT="N&#xe3;o &#xe9; desej&#xe1;vel que os clientes das classes precisem conhecer  todos  seus  detalhes  estruturais  ou  se  acoplar  a  diversas implementa&#xe7;&#xf5;es. O padr&#xe3;o  Facade  (pronuncia-se &quot;fa&#xe7;ade&quot; por ser uma palavra de origem francesa) prop&#xf5;e  a  cria&#xe7;&#xe3;o de uma  classe intermedi&#xe1;ria  que  serve  como  uma  fachada  para  que  o  cliente possa acessar as funcionalidades desejadas. Essa classe encapsula a complexidade  da  intera&#xe7;&#xe3;o  entre  os  diversos  componentes  e desacopla o cliente das implementa&#xe7;&#xf5;es.">
@@ -401,6 +401,54 @@
 <node COLOR="#990000" CREATED="1699530602495" ID="ID_917903426" MODIFIED="1699530606909" TEXT="A necessidade do  Facade   muitas  vezes  n&#xe3;o  &#xe9;  percebida  no in&#xed;cio do projeto. Isso ocorre porque as intera&#xe7;&#xf5;es entre as classes come&#xe7;am  de  forma  simples  e  objetiva,  mas  com  a  evolu&#xe7;&#xe3;o  do projeto  acabam  se  espalhando  para  diversas  classes  e  utilizando diversas  classes  e  m&#xe9;todos.  Dessa  forma,  quando  o  c&#xf3;digo  da aplica&#xe7;&#xe3;o come&#xe7;a a se entrela&#xe7;ar demais com o de um subsistema e isso passa a dificultar a manuten&#xe7;&#xe3;o, &#xe9; hora de criar um  Facade  para isolar uma parte da outra.A necessidade do  Facade   muitas  vezes  n&#xe3;o  &#xe9;  percebida  no in&#xed;cio do projeto. Isso ocorre porque as intera&#xe7;&#xf5;es entre as classes come&#xe7;am  de  forma  simples  e  objetiva,  mas  com  a  evolu&#xe7;&#xe3;o  do projeto  acabam  se  espalhando  para  diversas  classes  e  utilizando diversas  classes  e  m&#xe9;todos.  Dessa  forma,  quando  o  c&#xf3;digo  da aplica&#xe7;&#xe3;o come&#xe7;a a se entrela&#xe7;ar demais com o de um subsistema e isso passa a dificultar a manuten&#xe7;&#xe3;o, &#xe9; hora de criar um  Facade  para isolar uma parte da outra.">
 <font NAME="SansSerif" SIZE="14"/>
 </node>
+</node>
+<node COLOR="#00b439" CREATED="1699614799308" FOLDED="true" ID="ID_912639354" MODIFIED="1700049243318" TEXT="Anti-Corruption-Layer">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font BOLD="true" NAME="SansSerif" SIZE="16"/>
+<node COLOR="#990000" CREATED="1699614818822" ID="ID_811719755" MODIFIED="1699614819641" TEXT="O  Anti-Corruption Layer  prop&#xf5;e a cria&#xe7;&#xe3;o de uma camada entre  a  nova  aplica&#xe7;&#xe3;o  e  o  c&#xf3;digo  legado.  Ela  &#xe9;  respons&#xe1;vel  por traduzir  as  chamadas  feitas  pela  aplica&#xe7;&#xe3;o  em  invoca&#xe7;&#xf5;es  para classes do sistema legado. A partir dessa nova  camada,  &#xe9; poss&#xed;vel abstrair  a  exist&#xea;ncia  do  c&#xf3;digo  legado  do  resto  da  aplica&#xe7;&#xe3;o, oferecendo  os  servi&#xe7;os  de  forma  consistente  com  o  modelo  e  a modelagem da nova aplica&#xe7;&#xe3;o">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+</node>
+<node COLOR="#00b439" CREATED="1699615200997" FOLDED="true" ID="ID_108659121" MODIFIED="1700049242302" TEXT="Mediator">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font BOLD="true" NAME="SansSerif" SIZE="16"/>
+<node COLOR="#990000" CREATED="1699615218286" ID="ID_1497142211" MODIFIED="1699615218877" TEXT="Esse padr&#xe3;o prop&#xf5;e  a  cria&#xe7;&#xe3;o de uma  classe que  serve como mediadora entre os objetos. Dessa forma, em vez dos objetos enviarem requisi&#xe7;&#xf5;es e receberem requisi&#xe7;&#xf5;es de v&#xe1;rios outros, ela vai interagir apenas com o mediador. Essa classe ser&#xe1; respons&#xe1;vel por receber  as requisi&#xe7;&#xf5;es dos objetos  e  envi&#xe1;-las  para os objetos que as devem receber.">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1699884440596" ID="ID_1649564686" MODIFIED="1699884441150" TEXT="Um dos principais benef&#xed;cios desse padr&#xe3;o &#xe9; o desacoplamento entre as classes que precisam realizar uma chamada e as que devem trat&#xe1;-las.  Como  o  mediador  &#xe9;  colocado  entre  as  classes,  em nenhum momento existe um acesso direto entre elas.">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1699884497271" ID="ID_1824970681" MODIFIED="1699884497872" TEXT="O  Mediator   centraliza o  gerenciamento do  relacionamento entre objetos, o que simplifica a troca das inst&#xe2;ncias e a adi&#xe7;&#xe3;o de novas no contexto de intera&#xe7;&#xe3;o. Em outras palavras, caso um novo objeto precise interagir com outros, em vez dele ser ligado a cada objeto, ele s&#xf3; precisa estar ligado ao mediador.">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1699884564525" ID="ID_1468567319" MODIFIED="1699884565028" TEXT="O  Mediator   &#xe9; indicado quando  as  rela&#xe7;&#xf5;es  entre os objetos forem  complexas  o  suficiente,  de  forma  a  valer  a  pena  que  essa responsabilidade seja concentrada em uma classe. Um dos motivos para  essa  complexidade  seria  uma  grande  quantidade  de  objetos, os  quais  precisariam  estar  ligados  uns  aos  outros.  Outro  motivo seriam regras para essa intera&#xe7;&#xe3;o entre os objetos, como condi&#xe7;&#xf5;es para que um determinado objeto receba uma chamada.">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1699963645217" ID="ID_1638375460" MODIFIED="1699963707959" TEXT="Uma forma comum de usar o Mediator &#xe9; com lan&#xe7;amento de eventos. Nesse caso uma classe gera o evento e avisa o Mediator, que por sua vez se encarrega de avisar as classes que est&#xe3;o interessadas nesse evento">
+<font NAME="SansSerif" SIZE="14"/>
+<node COLOR="#111111" CREATED="1699963710042" ID="ID_99348562" MODIFIED="1699963797096" TEXT="O Spring possui uma forma nativa de implementar isso, Usando as interfaces ApplicationEvent, ApplicationEventPublisherAware e ApplicationListener"/>
+</node>
+</node>
+<node COLOR="#00b439" CREATED="1700049245469" ID="ID_1928768907" MODIFIED="1700049782259" TEXT="FlyWeight">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font BOLD="true" NAME="SansSerif" SIZE="16"/>
+<node COLOR="#990000" CREATED="1700049294887" ID="ID_1464538994" MODIFIED="1700049623711" TEXT="O  Flyweight  (cuja tradu&#xe7;&#xe3;o seria algo como peso-mosca ou&#xa;peso-pena)  &#xe9; um padr&#xe3;o  cujo objetivo  &#xe9; permitir  a representa&#xe7;&#xe3;o&#xa;de um n&#xfa;mero grande de objetos de forma eficiente. Ele &#xe9; aplic&#xe1;vel&#xa;em cen&#xe1;rios onde existem diversas inst&#xe2;ncias da mesma classe em&#xa;mem&#xf3;ria que s&#xe3;o similares">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1700049757514" ID="ID_626356638" MODIFIED="1700049780051" TEXT="Uma caracter&#xed;stica muito importante do  Flyweight  &#xe9; que os objetos  representados  por  ele  precisam  ser  imut&#xe1;veis.  Em  outras palavras,  depois  de  criados,  o  estado  interno  desses  objetos  n&#xe3;o pode ser mais alterado. O  principal  motivo  para  isso  &#xe9;  que  a  mesma  inst&#xe2;ncia  estar&#xe1; sendo  usada  em  diversos  contextos  da  aplica&#xe7;&#xe3;o,  e  se  ela  for  de&#xa;alguma  forma  modificada,  todos  os  outros  contextos  ser&#xe3;o&#xa;afetados.">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1700049892340" ID="ID_228824726" MODIFIED="1700049950577" TEXT="A  melhora  de  desempenho  tamb&#xe9;m  pode  ter  impacto  em processamento,  visto  que  diversas inst&#xe2;ncias n&#xe3;o  precisar&#xe3;o mais ser  criadas,  e  posteriormente  coletadas  pelo  Garbage  Collector.&#xa;&#xa;Al&#xe9;m  disso,  se  a  aplica&#xe7;&#xe3;o  realmente  garantir  que  existe  apenas&#xa;uma  inst&#xe2;ncia  para  cada  tipo  de  objeto  daquela  classe,  as&#xa;compara&#xe7;&#xf5;es entre eles podem ser feitas usando o operador &quot;==&quot;,&#xa;que &#xe9; muito mais eficiente que o m&#xe9;todo  equals() ">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+</node>
+</node>
+<node COLOR="#0033ff" CREATED="1699883644526" ID="ID_608104831" MODIFIED="1699883647895" POSITION="right" TEXT="Uml">
+<edge STYLE="sharp_bezier" WIDTH="8"/>
+<font NAME="SansSerif" SIZE="18"/>
+<node COLOR="#00b439" CREATED="1699883648750" ID="ID_916048318" MODIFIED="1699883649627" TEXT="https://en.wikipedia.org/wiki/Class_diagram#Aggregation">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
 </node>
 </node>
 </node>
