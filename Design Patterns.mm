@@ -375,7 +375,7 @@
 </node>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1699529836508" ID="ID_1900676868" MODIFIED="1700071522232" POSITION="left" TEXT="Gerenciando Muitos Objetos">
+<node COLOR="#0033ff" CREATED="1699529836508" FOLDED="true" ID="ID_1900676868" MODIFIED="1700564128142" POSITION="left" TEXT="Gerenciando Muitos Objetos">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 <icon BUILTIN="full-9"/>
@@ -409,7 +409,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1699615200997" FOLDED="true" ID="ID_108659121" MODIFIED="1700049242302" TEXT="Mediator">
+<node COLOR="#00b439" CREATED="1699615200997" ID="ID_108659121" MODIFIED="1700274986125" TEXT="Mediator">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font BOLD="true" NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1699615218286" ID="ID_1497142211" MODIFIED="1699615218877" TEXT="Esse padr&#xe3;o prop&#xf5;e  a  cria&#xe7;&#xe3;o de uma  classe que  serve como mediadora entre os objetos. Dessa forma, em vez dos objetos enviarem requisi&#xe7;&#xf5;es e receberem requisi&#xe7;&#xf5;es de v&#xe1;rios outros, ela vai interagir apenas com o mediador. Essa classe ser&#xe1; respons&#xe1;vel por receber  as requisi&#xe7;&#xf5;es dos objetos  e  envi&#xe1;-las  para os objetos que as devem receber.">
@@ -449,6 +449,39 @@
 <node COLOR="#00b439" CREATED="1699883648750" ID="ID_916048318" MODIFIED="1699883649627" TEXT="https://en.wikipedia.org/wiki/Class_diagram#Aggregation">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
+</node>
+</node>
+<node COLOR="#0033ff" CREATED="1700271235886" ID="ID_1659485261" MODIFIED="1700271255289" POSITION="left" TEXT="Indo Alem do Basico">
+<edge STYLE="sharp_bezier" WIDTH="8"/>
+<font NAME="SansSerif" SIZE="18"/>
+<icon BUILTIN="full-1"/>
+<icon BUILTIN="full-0"/>
+<node COLOR="#00b439" CREATED="1700271258834" FOLDED="true" ID="ID_294094200" MODIFIED="1700564352126" TEXT="Frameworks">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+<node COLOR="#990000" CREATED="1700271305461" ID="ID_1061748130" MODIFIED="1700271306269" TEXT="Ele  n&#xe3;o  apenas  prov&#xea;  um  re&#xfa;so  de  seu  c&#xf3;digo, como  tamb&#xe9;m  o  re&#xfa;so  de  sua  estrutura,  de  seu  design.  Dessa forma, al&#xe9;m de possibilitar o reaproveitamento de funcionalidades acelerando  o  ritmo  de  desenvolvimento,  ele  tamb&#xe9;m  direciona  a arquitetura da aplica&#xe7;&#xe3;o ao uso de boas pr&#xe1;ticas de c&#xf3;digo.">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1700271347989" ID="ID_163169654" MODIFIED="1700271348822" TEXT="Um framework pode ser  visto  como um software incompleto que  precisa  ser  preenchido  com  partes  espec&#xed;ficas  de  uma aplica&#xe7;&#xe3;o  para  poder  ser  executado  (mais  em  Designing  reusable classes, por Ralph Johnson e Brian Foote). Imagine, por exemplo, um framework que fa&#xe7;a o agendamento de execu&#xe7;&#xf5;es. Sozinho, ele n&#xe3;o faz nada, pois n&#xe3;o tem o que ser agendado sem a exist&#xea;ncia de uma aplica&#xe7;&#xe3;o. Ao ser instanciado, ele &#xe9; completado com classes da aplica&#xe7;&#xe3;o  que  ser&#xe3;o  invocadas  por  ele,  e  ent&#xe3;o  faz  sentido  a  sua execu&#xe7;&#xe3;o.">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1700271520509" ID="ID_754821612" MODIFIED="1700271521076" TEXT="Ele  prop&#xf5;e  uma  forma  de  re&#xfa;so  muito  diferente  de  uma biblioteca  de  fun&#xe7;&#xf5;es  ou  de  classes.  Quando  uma  biblioteca  &#xe9; utilizada,  a  aplica&#xe7;&#xe3;o  &#xe9;  respons&#xe1;vel  por  invocar  a  funcionalidade das classes, coordenando sua execu&#xe7;&#xe3;o e usando-a como um passo de  seu  processamento.  Quando  um  framework  &#xe9;  utilizado, normalmente &#xe9; ele quem tem o controle sobre a execu&#xe7;&#xe3;o e invoca a  funcionalidade  das  classes  da  aplica&#xe7;&#xe3;o  em  pontos  espec&#xed;ficos. Isso  permite  que  a  aplica&#xe7;&#xe3;o  reutilize  o  c&#xf3;digo  e  a  estrutura  do framework, especializando-o para suas necessidades.">
+<font NAME="SansSerif" SIZE="14"/>
+<node COLOR="#111111" CREATED="1700340869544" ID="ID_248821344" MODIFIED="1700340923816" TEXT="&quot;Exemplo framework MVC&quot;&#xa;&#xa;Observe  que  antes  da  classe  da  aplica&#xe7;&#xe3;o (controller)  receber  o  controle  da requisi&#xe7;&#xe3;o,  diversas  outras  funcionalidades  s&#xe3;o  executadas  pelo framework, indo desde a tradu&#xe7;&#xe3;o dos par&#xe2;metros at&#xe9; controle de acesso."/>
+</node>
+<node COLOR="#990000" CREATED="1700340538538" ID="ID_1710489435" MODIFIED="1700340539264" TEXT="Diferentemente  dos frameworks,  as  bibliotecas  s&#xe3;o  simplesmente classes reutiliz&#xe1;veis, que n&#xe3;o permitem nenhum tipo de extens&#xe3;o.">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+</node>
+<node COLOR="#00b439" CREATED="1700564354663" ID="ID_1141977637" MODIFIED="1700564357969" TEXT="Generics">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+<node COLOR="#990000" CREATED="1700564360891" ID="ID_949514793" MODIFIED="1700564377177" TEXT="Os  tipos  gen&#xe9;ricos  s&#xe3;o  uma  funcionalidade  de  linguagem introduzida no Java 1.5. A partir dela, &#xe9; poss&#xed;vel parametrizar tipos para  que  seja  poss&#xed;vel  substituir  partes  da  assinatura  de  seus m&#xe9;todos,  como  retornos  e  argumentos,  pelo  par&#xe2;metro  passado para  o  tipo.">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1700564937199" ID="ID_1204418170" MODIFIED="1700565239434" TEXT="Adotar a feature de generics na implementa&#xe7;&#xe3;o de padr&#xf5;es ajuda a garantir que o c&#xf3;digo fique mais coeso. &#xa;&#xa;Imagine por exemplo um c&#xf3;digo usando o padr&#xe3;o Observer. A classe observada precisa notificar um observador(es). Porem podem existar N tipos de observadores que escutam N tipos de eventos. Nesse caso a feature de generics ajuda a garantir que a classe observada apenas ira interagir com observadores que sabem interpretar os eventos gerados por ela.">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
 </node>
 </node>
 </node>
