@@ -75,7 +75,9 @@
 <node COLOR="#111111" CREATED="1700275015775" ID="ID_738097874" MODIFIED="1700526949497" TEXT="Exposes the Service on each Node&apos;s IP at a static port (the NodePort). To make the node port available, Kubernetes sets up a cluster IP address, the same as if you had requested a Service of type: ClusterIP."/>
 <node COLOR="#111111" CREATED="1700527494096" ID="ID_1993037147" MODIFIED="1700527495308" TEXT="In summary, a NodePort Service is a way to expose your Service externally to the cluster by assigning a static port on each node. It provides a simple way to make your service accessible from outside the cluster, although it&apos;s not typically used for production scenarios where you might use a load balancer or an Ingress resource for more advanced routing and control."/>
 </node>
-<node COLOR="#111111" CREATED="1700018418798" ID="ID_1041898859" MODIFIED="1700018421738" TEXT="LoadBalancer"/>
+<node COLOR="#111111" CREATED="1700018418798" ID="ID_1041898859" MODIFIED="1700018421738" TEXT="LoadBalancer">
+<node COLOR="#111111" CREATED="1700566977181" ID="ID_613384731" MODIFIED="1700566978325" TEXT="Exposes the Service externally using an external load balancer. Kubernetes does not directly offer a load balancing component; you must provide one, or you can integrate your Kubernetes cluster with a cloud provider."/>
+</node>
 </node>
 </node>
 </node>

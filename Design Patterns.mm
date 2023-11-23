@@ -84,7 +84,7 @@
 </node>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1687634806970" FOLDED="true" ID="ID_704232477" MODIFIED="1699883629262" POSITION="left" TEXT="Generic notes">
+<node COLOR="#0033ff" CREATED="1687634806970" FOLDED="true" ID="ID_704232477" MODIFIED="1700739995655" POSITION="left" TEXT="Generic notes">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 <node COLOR="#00b439" CREATED="1687634834176" ID="ID_1036146659" MODIFIED="1687634918924" TEXT="Quando a programa&#xe7;&#xe3;o orientada a objetos foi criada, um dos objetivos era simplificar a abstra&#xe7;&#xe3;o dos conceitos do mundo real para o software. Dessa forma, um elemento existente no dom&#xed;nio&#xa;da aplica&#xe7;&#xe3;o poderia ser representado utilizando um objeto no&#xa;software. Da mesma forma que as coisas interagem no mundo real&#xa;para a realiza&#xe7;&#xe3;o de um objetivo, dentro de um software n&#xe3;o&#xa;poderia ser diferente. Do mesmo jeito que diversas pe&#xe7;as s&#xe3;o&#xa;combinadas em v&#xe1;rios n&#xed;veis para compor um componente f&#xed;sico,&#xa;os componentes de software tamb&#xe9;m podem ser resultado da&#xa;combina&#xe7;&#xe3;o de outros componentes mais granulares.">
@@ -100,6 +100,10 @@
 <font NAME="SansSerif" SIZE="16"/>
 </node>
 <node COLOR="#00b439" CREATED="1690598190532" ID="ID_1420019047" MODIFIED="1690598198570" TEXT="Lembre-se de que o padr&#xe3;o &#xe9; apenas uma refer&#xea;ncia, e cabe ao desenvolvedor adapt&#xe1;-lo ao seu contexto!">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+</node>
+<node COLOR="#00b439" CREATED="1700739989459" ID="ID_949806663" MODIFIED="1700739990878" TEXT="Muitas  vezes,  &#xe9;  complicado  separar  o  que  &#xe9;  uma  solu&#xe7;&#xe3;o  de design  do  que  &#xe9;  uma  solu&#xe7;&#xe3;o  arquitetural.  O  importante  &#xe9;  n&#xe3;o utilizar as solu&#xe7;&#xf5;es dos padr&#xf5;es cegamente e sempre considerar as consequ&#xea;ncias antes do seu uso">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 </node>
@@ -357,7 +361,7 @@
 </node>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1699282281446" FOLDED="true" ID="ID_1087661934" MODIFIED="1699531306970" POSITION="right" TEXT="Resumo">
+<node COLOR="#0033ff" CREATED="1699282281446" FOLDED="true" ID="ID_1087661934" MODIFIED="1700739980687" POSITION="right" TEXT="Resumo">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 <node COLOR="#00b439" CREATED="1699282287618" ID="ID_828164883" MODIFIED="1699282298746" TEXT="Proxy e Decorator">
@@ -375,7 +379,7 @@
 </node>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1699529836508" FOLDED="true" ID="ID_1900676868" MODIFIED="1700564128142" POSITION="left" TEXT="Gerenciando Muitos Objetos">
+<node COLOR="#0033ff" CREATED="1699529836508" FOLDED="true" ID="ID_1900676868" MODIFIED="1700682133637" POSITION="left" TEXT="Gerenciando Muitos Objetos">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 <icon BUILTIN="full-9"/>
@@ -480,6 +484,46 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 <node COLOR="#990000" CREATED="1700564937199" ID="ID_1204418170" MODIFIED="1700565239434" TEXT="Adotar a feature de generics na implementa&#xe7;&#xe3;o de padr&#xf5;es ajuda a garantir que o c&#xf3;digo fique mais coeso. &#xa;&#xa;Imagine por exemplo um c&#xf3;digo usando o padr&#xe3;o Observer. A classe observada precisa notificar um observador(es). Porem podem existar N tipos de observadores que escutam N tipos de eventos. Nesse caso a feature de generics ajuda a garantir que a classe observada apenas ira interagir com observadores que sabem interpretar os eventos gerados por ela.">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+</node>
+<node COLOR="#00b439" CREATED="1700682138043" ID="ID_1132043415" MODIFIED="1700682140182" TEXT="TDD">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+<node COLOR="#990000" CREATED="1700682594304" ID="ID_1350992440" MODIFIED="1700682686868" TEXT="TDD cria necissidades de teste, que obrigam a utiliza&#xe7;&#xe3;o de um conjunto de boas praticas, oque acaba favorecendo o design da aplica&#xe7;&#xe3;o.">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1700682732377" ID="ID_1539056517" MODIFIED="1700683449764" TEXT="Os testes s&#xe3;o maneiras de expressar o design desejado para a classe.">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1700683303528" ID="ID_1851365663" MODIFIED="1700683304925" TEXT="Concluindo, por mais que o TDD favore&#xe7;a a cria&#xe7;&#xe3;o de classes mais coesas e desacopladas, isso n&#xe3;o &#xe9; o suficiente para o projeto de uma  aplica&#xe7;&#xe3;o  como um todo. Nesse  contexto,  a utiliza&#xe7;&#xe3;o de padr&#xf5;es,  tanto  para  direcionar  os  testes  quanto  para  o  alvo  de refatora&#xe7;&#xf5;es,  pode  ter  um  impacto  positivo  nas  solu&#xe7;&#xf5;es desenvolvidas.">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+</node>
+<node COLOR="#00b439" CREATED="1700739026633" ID="ID_1967962909" MODIFIED="1700739031289" TEXT="Arquitetura">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+<node COLOR="#990000" CREATED="1700739072541" ID="ID_1724071770" MODIFIED="1700739073882" TEXT="Muitos dos padr&#xf5;es apresentados neste livro tamb&#xe9;m podem se aplicar  em  um  contexto  mais  amplo  de  uma  arquitetura.  Nesse caso,  em  vez  de  classes,  os  participantes  dos  padr&#xf5;es  seriam componentes e at&#xe9; mesmo subsistemas de um software. Como os padr&#xf5;es  s&#xe3;o  ideias  e  n&#xe3;o  est&#xe3;o  ligados  a  implementa&#xe7;&#xf5;es espec&#xed;ficas,  os  problemas  e  as  solu&#xe7;&#xf5;es  dos  padr&#xf5;es  podem  ser aplicados em uma escala diferente.">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1700739329745" ID="ID_1427025260" MODIFIED="1700739880603" TEXT="Alguns exemplos de design patterns sendo usados em nivel arquitetual">
+<font NAME="SansSerif" SIZE="14"/>
+<node COLOR="#111111" CREATED="1700739857562" ID="ID_772722711" MODIFIED="1700739859723" TEXT="Proxy">
+<node COLOR="#111111" CREATED="1700739351870" ID="ID_944189378" MODIFIED="1700739847950" TEXT="De  forma  similar,  o   Proxy   tamb&#xe9;m  pode  ser  aplicado  de forma  mais  abstrata  a  arquiteturas.  Nesse  caso,  ele  ficar&#xe1;  como intermedi&#xe1;rio  entre  dois  subsistemas.  Ele  vai  disponibilizar  os mesmos  servi&#xe7;os  e  utilizar  o  mesmo  protocolo  que  o  subsistema original, para que seja transparente para o cliente a sua exist&#xea;ncia. Em  outras  palavras,  o  cliente  deve  acessar  o   Proxy   como  se estivesse acessando o subsistema original."/>
+<node COLOR="#111111" CREATED="1700739868579" ID="ID_1959340109" MODIFIED="1700739875887">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="images/proxy_arch_level.png" />
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+<node COLOR="#990000" CREATED="1700740042606" ID="ID_1995638063" MODIFIED="1700740055134" TEXT="Lembre-se  de  que  existem  solu&#xe7;&#xf5;es  alternativas  que  podem resolver  o  problema  de  uma  forma  diferente,  gerando  um  outro conjunto  de  consequ&#xea;ncias.  Trabalhar  com  arquitetura  &#xe9;  saber fazer trocas, por exemplo, sacrificando desempenho para aumentar&#xa;a seguran&#xe7;a, e escolher as solu&#xe7;&#xf5;es de forma a atender os requisitos&#xa;n&#xe3;o funcionais do sistema.">
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
