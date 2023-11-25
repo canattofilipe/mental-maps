@@ -455,7 +455,7 @@
 <font NAME="SansSerif" SIZE="16"/>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1700271235886" ID="ID_1659485261" MODIFIED="1700271255289" POSITION="left" TEXT="Indo Alem do Basico">
+<node COLOR="#0033ff" CREATED="1700271235886" ID="ID_1659485261" MODIFIED="1700944439779" POSITION="left" TEXT="Indo Alem do Basico">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 <icon BUILTIN="full-1"/>
@@ -477,7 +477,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1700564354663" ID="ID_1141977637" MODIFIED="1700564357969" TEXT="Generics">
+<node COLOR="#00b439" CREATED="1700564354663" FOLDED="true" ID="ID_1141977637" MODIFIED="1700944432236" TEXT="Generics">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1700564360891" ID="ID_949514793" MODIFIED="1700564377177" TEXT="Os  tipos  gen&#xe9;ricos  s&#xe3;o  uma  funcionalidade  de  linguagem introduzida no Java 1.5. A partir dela, &#xe9; poss&#xed;vel parametrizar tipos para  que  seja  poss&#xed;vel  substituir  partes  da  assinatura  de  seus m&#xe9;todos,  como  retornos  e  argumentos,  pelo  par&#xe2;metro  passado para  o  tipo.">
@@ -487,7 +487,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1700682138043" ID="ID_1132043415" MODIFIED="1700682140182" TEXT="TDD">
+<node COLOR="#00b439" CREATED="1700682138043" FOLDED="true" ID="ID_1132043415" MODIFIED="1700945231030" TEXT="TDD">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1700682594304" ID="ID_1350992440" MODIFIED="1700682686868" TEXT="TDD cria necissidades de teste, que obrigam a utiliza&#xe7;&#xe3;o de um conjunto de boas praticas, oque acaba favorecendo o design da aplica&#xe7;&#xe3;o.">
@@ -500,7 +500,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1700739026633" ID="ID_1967962909" MODIFIED="1700739031289" TEXT="Arquitetura">
+<node COLOR="#00b439" CREATED="1700739026633" FOLDED="true" ID="ID_1967962909" MODIFIED="1700944430014" TEXT="Arquitetura">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1700739072541" ID="ID_1724071770" MODIFIED="1700739073882" TEXT="Muitos dos padr&#xf5;es apresentados neste livro tamb&#xe9;m podem se aplicar  em  um  contexto  mais  amplo  de  uma  arquitetura.  Nesse caso,  em  vez  de  classes,  os  participantes  dos  padr&#xf5;es  seriam componentes e at&#xe9; mesmo subsistemas de um software. Como os padr&#xf5;es  s&#xe3;o  ideias  e  n&#xe3;o  est&#xe3;o  ligados  a  implementa&#xe7;&#xf5;es espec&#xed;ficas,  os  problemas  e  as  solu&#xe7;&#xf5;es  dos  padr&#xf5;es  podem  ser aplicados em uma escala diferente.">
@@ -518,12 +518,37 @@
   <body>
     <img src="images/proxy_arch_level.png" />
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
 <node COLOR="#990000" CREATED="1700740042606" ID="ID_1995638063" MODIFIED="1700740055134" TEXT="Lembre-se  de  que  existem  solu&#xe7;&#xf5;es  alternativas  que  podem resolver  o  problema  de  uma  forma  diferente,  gerando  um  outro conjunto  de  consequ&#xea;ncias.  Trabalhar  com  arquitetura  &#xe9;  saber fazer trocas, por exemplo, sacrificando desempenho para aumentar&#xa;a seguran&#xe7;a, e escolher as solu&#xe7;&#xf5;es de forma a atender os requisitos&#xa;n&#xe3;o funcionais do sistema.">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+</node>
+<node COLOR="#00b439" CREATED="1700944439780" FOLDED="true" ID="ID_1389703129" MODIFIED="1700945232742" TEXT="Comunidade">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+<node COLOR="#990000" CREATED="1700944478393" ID="ID_248915452" MODIFIED="1700944479480" TEXT="&quot;Fundamental  a  qualquer  disciplina  relacionada  a  ci&#xea;ncia  ou engenharia &#xe9; um vocabul&#xe1;rio para expressar seus conceitos, e uma linguagem para os relacionar juntos.&quot; &#x2013; Brad Appleton">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+</node>
+<node COLOR="#00b439" CREATED="1700944928281" FOLDED="true" ID="ID_1697115417" MODIFIED="1700945228983" TEXT="E agora?">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+<node COLOR="#990000" CREATED="1700944939774" ID="ID_1301558480" MODIFIED="1700944941147" TEXT="&quot;Toda vez que voc&#xea; tem medo de fazer alguma coisa e voc&#xea; faz, ela te deixa mais forte. Mesmo que voc&#xea; falhe.&quot; &#x2013; Fred Bartlit">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1700945000575" ID="ID_720354566" MODIFIED="1700945001927" TEXT="Diferentemente de quando se aprende a usar um novo framework ou uma nova API, quando se est&#xe1; adquirindo conhecimento, saber projetar  um  software  &#xe9;  uma  habilidade.  E  uma  habilidade  s&#xf3;  se aprende  de  verdade  com  pr&#xe1;tica,  sendo  que  o  conhecimento  &#xe9; necess&#xe1;rio, por&#xe9;m n&#xe3;o suficiente.">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1700945053293" ID="ID_1093560859" MODIFIED="1700945054240" TEXT="Aprendemos  muito  observando  solu&#xe7;&#xf5;es  prontas  e abstraindo o que foi utilizado na sua concep&#xe7;&#xe3;o.">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1700945188713" ID="ID_372632244" MODIFIED="1700945189670" TEXT="Finalmente, desenvolvimento de software &#xe9; algo que se estuda durante toda sua carreira! Conhe&#xe7;a novos padr&#xf5;es, estude como os padr&#xf5;es  se  encaixam  nas  novas  tecnologias,  e  busque  os  padr&#xf5;es espec&#xed;ficos para os dom&#xed;nios relacionados a sua arquitetura">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1700945212958" ID="ID_1919415176" MODIFIED="1700945220646" TEXT="lembre-se  de  que  design  de  software  &#xe9;  uma  atividade criativa,  ent&#xe3;o  evite  formulas  prontas,  tenha  sempre  uma  vis&#xe3;o cr&#xed;tica  e  utilize  os  padr&#xf5;es  como  uma  ferramenta  da  sua&#xa;criatividade.">
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
