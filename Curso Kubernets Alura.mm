@@ -14,10 +14,10 @@
 </node>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1699729836921" ID="ID_1579333070" MODIFIED="1699729843503" POSITION="left" TEXT="Componentes">
+<node COLOR="#0033ff" CREATED="1699729836921" ID="ID_1579333070" MODIFIED="1706288988023" POSITION="left" TEXT="Componentes">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
-<node COLOR="#00b439" CREATED="1699729844446" ID="ID_510268063" MODIFIED="1700325583592" TEXT="Pod">
+<node COLOR="#00b439" CREATED="1699729844446" FOLDED="true" ID="ID_510268063" MODIFIED="1706288879974" TEXT="Pod">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1699730804265" HGAP="23" ID="ID_1092648654" MODIFIED="1699730818439" TEXT="A menor unidade do K8S" VSHIFT="2">
@@ -45,7 +45,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1700018226401" ID="ID_1694877895" MODIFIED="1700018234767" TEXT="Services">
+<node COLOR="#00b439" CREATED="1700018226401" FOLDED="true" ID="ID_1694877895" MODIFIED="1706288882669" TEXT="Services">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1700527212172" HGAP="28" ID="ID_1798196279" MODIFIED="1700527217392" TEXT="A Service in Kubernetes is a way to expose a set of Pods as a network service. It provides a stable IP address and DNS name by which other applications within the cluster can reliably reach the Pods." VSHIFT="-37">
@@ -78,6 +78,23 @@
 <node COLOR="#111111" CREATED="1700018418798" ID="ID_1041898859" MODIFIED="1700018421738" TEXT="LoadBalancer">
 <node COLOR="#111111" CREATED="1700566977181" ID="ID_613384731" MODIFIED="1700566978325" TEXT="Exposes the Service externally using an external load balancer. Kubernetes does not directly offer a load balancing component; you must provide one, or you can integrate your Kubernetes cluster with a cloud provider."/>
 </node>
+</node>
+</node>
+<node COLOR="#00b439" CREATED="1706288886173" FOLDED="true" ID="ID_1048284819" MODIFIED="1706288985363" TEXT="ReplicaSet">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+<node COLOR="#990000" CREATED="1706288893795" ID="ID_358961090" MODIFIED="1706288972697" TEXT="Ensure that the application will ever have a configured number of replicas. Even when you manually delete a pod it will work to reestablish the configured/desired state. ">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+</node>
+<node COLOR="#00b439" CREATED="1706288988024" ID="ID_1517769300" MODIFIED="1706288996856" TEXT="Deployments">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+<node COLOR="#990000" CREATED="1706288998427" ID="ID_679243820" MODIFIED="1706289095055" TEXT="It is also a ReplicaSet, becase when you create a deployment K8S will automatically create a RS to manage the pods managed by the deployment. ">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1706289109446" ID="ID_540662456" MODIFIED="1706289413967" TEXT="The main reason it exists is to enable deployment with downtime and keep revision rollback.">
+<font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
 </node>
