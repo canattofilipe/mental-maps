@@ -14,7 +14,7 @@
 </node>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1699729836921" ID="ID_1579333070" MODIFIED="1706288988023" POSITION="left" TEXT="Componentes">
+<node COLOR="#0033ff" CREATED="1699729836921" ID="ID_1579333070" MODIFIED="1708024138290" POSITION="left" TEXT="Componentes">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 <node COLOR="#00b439" CREATED="1699729844446" FOLDED="true" ID="ID_510268063" MODIFIED="1706288879974" TEXT="Pod">
@@ -45,7 +45,7 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1700018226401" FOLDED="true" ID="ID_1694877895" MODIFIED="1706288882669" TEXT="Services">
+<node COLOR="#00b439" CREATED="1700018226401" ID="ID_1694877895" MODIFIED="1708024128745" TEXT="Services">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1700527212172" HGAP="28" ID="ID_1798196279" MODIFIED="1700527217392" TEXT="A Service in Kubernetes is a way to expose a set of Pods as a network service. It provides a stable IP address and DNS name by which other applications within the cluster can reliably reach the Pods." VSHIFT="-37">
@@ -80,20 +80,50 @@
 </node>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1706288886173" FOLDED="true" ID="ID_1048284819" MODIFIED="1706288985363" TEXT="ReplicaSet">
+<node COLOR="#00b439" CREATED="1706288886173" FOLDED="true" ID="ID_1048284819" MODIFIED="1708024151991" TEXT="ReplicaSet">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1706288893795" ID="ID_358961090" MODIFIED="1706288972697" TEXT="Ensure that the application will ever have a configured number of replicas. Even when you manually delete a pod it will work to reestablish the configured/desired state. ">
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1706288988024" ID="ID_1517769300" MODIFIED="1706288996856" TEXT="Deployments">
+<node COLOR="#00b439" CREATED="1706288988024" FOLDED="true" ID="ID_1517769300" MODIFIED="1708024151250" TEXT="Deployments">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 <node COLOR="#990000" CREATED="1706288998427" ID="ID_679243820" MODIFIED="1706289095055" TEXT="It is also a ReplicaSet, becase when you create a deployment K8S will automatically create a RS to manage the pods managed by the deployment. ">
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 <node COLOR="#990000" CREATED="1706289109446" ID="ID_540662456" MODIFIED="1706289413967" TEXT="The main reason it exists is to enable deployment with downtime and keep revision rollback.">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+</node>
+<node COLOR="#00b439" CREATED="1708028926288" ID="ID_1070601748" MODIFIED="1708028929016" TEXT="Volumes">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+<node COLOR="#990000" CREATED="1708024355018" ID="ID_1063273048" MODIFIED="1708029012739" TEXT="Persistent Volumes">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="14"/>
+<node COLOR="#111111" CREATED="1708024367679" ID="ID_109828280" MODIFIED="1708028933407" TEXT="It is a resource in the cluster just like a node is a cluster resource. PVs are volume plugins like Volumes, but have a lifecycle independent of any individual Pod that uses the PV.">
+<font NAME="SansSerif" SIZE="12"/>
+</node>
+</node>
+<node COLOR="#990000" CREATED="1708028964957" ID="ID_1714811859" MODIFIED="1708028980078" TEXT="Persistent Value Claim">
+<font NAME="SansSerif" SIZE="14"/>
+<node COLOR="#111111" CREATED="1708029003485" ID="ID_1241500851" MODIFIED="1708029559333" TEXT="PVs are resources in the cluster. PVCs are requests for those resources and also act as claim checks to the resource. "/>
+</node>
+<node COLOR="#990000" CREATED="1708030088728" ID="ID_53053072" MODIFIED="1708030119656" TEXT="Storage Classes">
+<font NAME="SansSerif" SIZE="14"/>
+<node COLOR="#111111" CREATED="1708030098645" ID="ID_1718921566" MODIFIED="1708030099657" TEXT="Kubernetes storage classes provide a way to dynamically assign persistent volumes (PVs) to pods. Storage classes define different types of storage that can be requested by applications running in Kubernetes. When a pod requests storage, the storage class determines the type and characteristics of the underlying storage volume that will be provisioned and bound to the pod. This allows for dynamic provisioning and management of storage resources in a Kubernetes cluster."/>
+<node COLOR="#111111" CREATED="1708030217266" ID="ID_1954610233" MODIFIED="1708030218047" TEXT="Storage classes are typically used by pods that require persistent storage, meaning that the data stored in the volume should survive across pod restarts and rescheduling. For example, a database application running in Kubernetes would likely require persistent storage to ensure that data is not lost when the pod is restarted or rescheduled to a different node in the cluster. On the other hand, stateless applications that don&apos;t require persistent storage can use ephemeral storage, which is not backed by a persistent volume and is destroyed when the pod is deleted or restarted."/>
+</node>
+</node>
+<node COLOR="#00b439" CREATED="1708026771677" ID="ID_1863580553" MODIFIED="1708028947875" TEXT="StatefulSets">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+<node COLOR="#990000" CREATED="1708026774851" ID="ID_1921887846" MODIFIED="1708031184742" TEXT="Used by systems that need keep state (statefull)">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node COLOR="#990000" CREATED="1708030611981" ID="ID_1987396915" MODIFIED="1708030612735" TEXT="Storage classes and StatefulSets are closely related in Kubernetes.  StatefulSets are a higher-level abstraction that allows you to manage stateful applications in Kubernetes. They provide guarantees for ordering and uniqueness of pod names, stable network identities, and persistent storage for each pod. StatefulSets are used when you need to deploy and manage stateful applications that require stable network identities and persistent storage.  Storage classes, on the other hand, are used to define the type and characteristics of the underlying storage volumes that are provisioned for pods. When using StatefulSets, you can specify a storage class in the pod template, which ensures that each pod in the StatefulSet gets its own persistent volume provisioned based on the defined storage class.  In summary, storage classes are used to define the type of storage that will be provisioned for StatefulSets, enabling stateful applications to have persistent storage that is unique to each pod in the set.">
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
