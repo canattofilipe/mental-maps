@@ -14,7 +14,7 @@
 </node>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1699729836921" ID="ID_1579333070" MODIFIED="1708024138290" POSITION="left" TEXT="Componentes">
+<node COLOR="#0033ff" CREATED="1699729836921" ID="ID_1579333070" MODIFIED="1708370374267" POSITION="left" TEXT="Componentes">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 <node COLOR="#00b439" CREATED="1699729844446" FOLDED="true" ID="ID_510268063" MODIFIED="1706288879974" TEXT="Pod">
@@ -127,11 +127,40 @@
 <font NAME="SansSerif" SIZE="14"/>
 </node>
 </node>
+<node COLOR="#00b439" CREATED="1708370374268" ID="ID_1587890727" MODIFIED="1708384408778" TEXT="Containers">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+<node COLOR="#990000" CREATED="1708370229284" ID="ID_336899189" MODIFIED="1708384411018" TEXT="Probes">
+<edge STYLE="sharp_bezier" WIDTH="8"/>
+<font NAME="SansSerif" SIZE="14"/>
+<node COLOR="#111111" CREATED="1708372390742" ID="ID_1860138774" MODIFIED="1708388126094" TEXT="Liveness">
+<node COLOR="#111111" CREATED="1708370235698" ID="ID_175853489" MODIFIED="1708370382335" TEXT="O K8s n&#xe3;o tem como saber se o container x dentro da pod esta healthy. Talvez a pod esteja healthy mas alguns dos seus containers n&#xe3;o">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="12"/>
+</node>
+<node COLOR="#111111" CREATED="1708370307090" ID="ID_884135280" MODIFIED="1708388168832" TEXT="Liveness probes determine whether or not an application running in a container is in a healthy state. If the liveness probe detects an unhealthy state, then Kubernetes kills the container and tries to redeploy it.">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="12"/>
+</node>
+</node>
+<node COLOR="#111111" CREATED="1708372404980" ID="ID_506264078" MODIFIED="1708388135305" TEXT="Readiness">
+<node COLOR="#111111" CREATED="1708372411566" ID="ID_1384447970" MODIFIED="1708388223754" TEXT="Readiness probes determine whether or not a container is ready to serve requests. If the readiness probe returns a failed state, then Kubernetes removes the IP address for the container from the endpoints of all Services.  &#xa;Developers use readiness probes to instruct Kubernetes that a running container should not receive any traffic. This is useful when waiting for an application to perform time-consuming initial tasks, such as establishing network connections, loading files, and warming caches."/>
+</node>
+</node>
+</node>
 </node>
 <node COLOR="#0033ff" CREATED="1699966597678" FOLDED="true" ID="ID_496556316" MODIFIED="1700071656054" POSITION="right" TEXT="Official Doc">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="18"/>
 <node COLOR="#00b439" CREATED="1699966749400" ID="ID_426855616" MODIFIED="1699966750449" TEXT="https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#get">
+<edge STYLE="bezier" WIDTH="thin"/>
+<font NAME="SansSerif" SIZE="16"/>
+</node>
+</node>
+<node COLOR="#0033ff" CREATED="1708388080138" HGAP="-200" ID="ID_1148588514" MODIFIED="1708388096089" POSITION="left" TEXT="Where find info ?" VSHIFT="-348">
+<edge STYLE="sharp_bezier" WIDTH="8"/>
+<font NAME="SansSerif" SIZE="18"/>
+<node COLOR="#00b439" CREATED="1708388089735" ID="ID_1409648003" MODIFIED="1708388090589" TEXT="https://kubebyexample.com/">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="16"/>
 </node>
